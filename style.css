@@ -1,0 +1,308 @@
+/* font-family import link  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+/* base tag  */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+ 
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.container{
+    background-color: #FFFFFF;
+    width:870px ;
+    padding:30px;
+    margin-top: 21px;
+    border-radius: 5px;
+ 
+    
+}
+
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+
+}
+
+
+/* Top-players is starsts from here  */
+
+.top-players{
+    margin-bottom: 30px;
+}
+
+.player-title{
+    font-family: Poppins;
+    font-size: 24px;
+    color:#562EFF;
+
+    margin-top: 3px;
+
+
+
+
+
+}
+
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+
+
+.player{
+    display: flex;
+    align-items: center;
+}
+
+.player img{
+    width:56px;
+    height:56px;
+}
+
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+
+/* Top plaryer is finish here  */
+
+
+
+/* Top blog is starts from here  */
+.top-blog{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+    grid-column-gap: 80px;
+}
+.blogs{
+    display: flex;
+}
+
+.blogs .thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+
+.blogs-info{
+ margin-left: 16px;
+}
+
+.blog-title{
+    font-size: 20px;
+}
+.blog-author{
+    font-size: 16px;
+    color:#9F9F9F;
+}
+
+
+.blog-author a{
+    text-decoration: none;
+    font-size: 16px;
+    color:#562EFF;
+}
+
+
+/* Top blog is finised here  */
+
+
+
+/* Lates course is starts from here  */
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+}
+
+.coures{
+    /*
+    padding-right: 16px;
+    padding-top: 13px; */
+    justify-content: center;
+    padding-left: 13px;
+    padding-bottom: 16px;
+    width:253px;
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(241, 238, 238);
+}
+
+.course-title{
+    font-size:  20.0336px;
+    margin-bottom: 10px;
+}
+
+.cuorse-author{
+    font-size: 14.6913px;
+}
+
+.course-rating{
+    display: flex;
+    align-items: center;
+    justify-content: 50px;
+    
+}
+
+.banner-coures img{
+    width: 224px;
+    height: 104px;
+}
+
+.course-rating{
+    font-size: 13px;
+}
+
+.course-rating .full-icon{
+    color:#FFC014;
+}
+
+.half-icon{
+    color:#FFC014;
+}
+
+.empty{
+    color:#A2A2A2;
+}
+
+.course-rating span{
+    padding-left: 11px;
+    padding-right: 25px;
+    font-size: 14.69px;
+   color:  #A2A2A2;
+}
+
+.clock-div{
+  font-size: 15px;
+  padding: 2px 5px;
+
+    color: #FF4A60;
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+}
+
+/* Lates course is finished here  */
+
+
+/* Media querais */
+
+/* Moble Device */
+@media only screen and (max-width:688px) {
+
+.container{
+   
+    width:100%;
+  
+}
+
+.players, .top-blog, .courses{
+    background-color: #EAF1F1;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.blogs{
+    align-items: center;
+}
+
+.player{
+    flex-direction: column;
+}
+
+.courses{
+ 
+   padding-left: 67px;
+  
+}
+
+.coures{
+    margin-bottom: 20px;
+}
+
+.player-title{
+    background-color: rgb(250, 245, 198);
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+
+}
+
+
+
+/* Tablet devise */
+
+
+@media only screen and (min-width: 688px) and (max-width: 992px){
+  
+  .container{
+      width:100%;
+  }
+
+  .player-title{
+      text-align: center;
+  }
+  .top-players{
+     
+      padding-top: 40px;
+    background-color: rgb(204, 248, 248);
+  }
+    
+    .players, .top-blog, .courses{
+      grid-template-columns: repeat(2,1fr);
+     
+    }
+
+    .player{
+       
+        flex-direction: column;
+        
+    }
+
+    .top-blogs{
+    padding-top: 30px;
+        background-color: bisque;
+    }
+
+    .courses{
+        padding-top: 60px;
+        
+    }
+    
+.coures{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    
+}
+
+.lates-course{
+    padding-top: 30px;
+  
+}
+
+.tablet{
+   
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+
+}
+
+
